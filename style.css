@@ -29,7 +29,7 @@ body {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 
-    background: url("images/bintang.jpeg") no-repeat center center;
+    background: url("bintang.jpeg") no-repeat center center;
     background-size: cover;
 }
 
@@ -138,7 +138,7 @@ button:hover {
    PAGE 4 FIX
 =================================*/
 .page4 {
-    background: url("images/bintang.jpeg") no-repeat center center;
+    background: url("bintang.jpeg") no-repeat center center;
     background-size: cover;
 }
 
@@ -182,4 +182,5 @@ button:hover {
     h1, h2 {
         font-size: 22px;
     }
+
 }
