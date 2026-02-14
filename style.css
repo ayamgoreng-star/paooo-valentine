@@ -1,0 +1,185 @@
+/* ===============================
+   RESET
+=================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   BODY GLOBAL
+=================================*/
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+
+    background: url("images/bintang.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+/* DARK OVERLAY */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 25, 50, 0.75);
+    z-index: 0;
+}
+
+/* ===============================
+   CONTAINER
+=================================*/
+.container {
+    position: relative;
+    z-index: 1;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 40px;
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ===============================
+   TEXT
+=================================*/
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.love-message,
+.ending-message {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   INPUT
+=================================*/
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+
+    border-radius: 25px;
+    border: none;
+
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+/* ===============================
+   BUTTON
+=================================*/
+button {
+    padding: 12px 30px;
+    margin-top: 15px;
+
+    border-radius: 30px;
+    border: none;
+
+    background: white;
+    color: #0a1932;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* ===============================
+   HELP TEXT
+=================================*/
+.help-text {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ===============================
+   IMAGES
+=================================*/
+.love-photo,
+.ticket-photo {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+/* ===============================
+   PAGE 4 FIX
+=================================*/
+.page4 {
+    background: url("images/bintang.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.page4::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 25, 50, 0.75);
+    z-index: -1;
+}
+
+/* Supaya container benar-benar tengah */
+.page4 .container {
+    margin: auto;
+}
+
+/* VIDEO CENTER FIX */
+.love-video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.video-message {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+=================================*/
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+}
